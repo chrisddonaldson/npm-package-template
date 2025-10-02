@@ -1,7 +1,7 @@
 {
-  "name": "@your-scope/your-package",
+  "name": "@chrisddonaldson/npm-package-template",
   "version": "0.0.0-development",
-  "description": "Template TypeScript npm package ready for GitHub Packages and semantic-release.",
+  "description": "Template TypeScript npm package",
   "private": false,
   "type": "module",
   "main": "./dist/index.cjs",
@@ -37,12 +37,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OWNER/REPO.git"
+    "url": "git+https://github.com/chrisddonaldson/npm-package-template.git"
   },
   "bugs": {
-    "url": "https://github.com/OWNER/REPO/issues"
+    "url": "https://github.com/chrisddonaldson/npm-package-template/issues"
   },
-  "homepage": "https://github.com/OWNER/REPO#readme",
+  "homepage": "https://github.com/chrisddonaldson/npm-package-template#readme",
   "license": "MIT",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.3",
@@ -63,4 +63,3 @@
     "vitest": "^2.1.1"
   }
 }
-
