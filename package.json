@@ -1,6 +1,6 @@
 {
   "name": "@chrisddonaldson/npm-package-template",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "Template TypeScript npm package",
   "private": false,
   "type": "module",
