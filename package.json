@@ -1,0 +1,66 @@
+{
+  "name": "@your-scope/your-package",
+  "version": "0.0.0-development",
+  "description": "Template TypeScript npm package ready for GitHub Packages and semantic-release.",
+  "private": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --watch",
+    "compile": "tsup",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{ts,tsx}\" --fix",
+    "format": "prettier --write .",
+    "release": "semantic-release",
+    "clean": "rimraf dist || rm -rf dist"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/REPO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OWNER/REPO/issues"
+  },
+  "homepage": "https://github.com/OWNER/REPO#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/commit-analyzer": "^11.1.0",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^10.1.0",
+    "@semantic-release/npm": "^11.0.2",
+    "@semantic-release/release-notes-generator": "^12.1.0",
+    "@types/node": "^22.5.4",
+    "@typescript-eslint/eslint-plugin": "^8.6.0",
+    "@typescript-eslint/parser": "^8.6.0",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "semantic-release": "^24.0.0",
+    "tsup": "^8.2.4",
+    "typescript": "^5.6.2",
+    "vitest": "^2.1.1"
+  }
+}
+
